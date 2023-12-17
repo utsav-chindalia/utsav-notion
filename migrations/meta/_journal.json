@@ -1,0 +1,27 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1702822772666,
+      "tag": "0000_polite_lilith",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1702824202246,
+      "tag": "0001_spotty_robbie_robertson",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1702824277294,
+      "tag": "0002_long_corsair",
+      "breakpoints": true
+    }
+  ]
+}
