@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button'
 import Image from 'next/image';
 import Banner from '../../../public/appBanner.png';
 import React from 'react'
+import { CLIENTS } from '@/lib/supabase/constants';
 
 
 const HomePageLayout = () => {
@@ -42,7 +43,13 @@ const HomePageLayout = () => {
         before:w-20
         before:z-10
         before:absolute
-        "></div>
+        ">
+            {[...Array(2)].map((arr)=> <div key={arr} className='flex flex-nowrap animate-slide'>{
+                CLIENTS.map((client) => (<div key={client.alt} className='relative w-[200px] m-20 shrink-0 flex items-center'>
+                   <Image src={client.logo}  alt={client.alt} width={200} className='object-contain max-w-none' />
+                </div>))
+            }</div>)}
+        </div>
     </section>
     </>
   )
